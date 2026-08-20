@@ -37,14 +37,12 @@ export default function Hero() {
 
         {/* Título principal */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 text-gray-900 animate-fade-in-up delay-200">
-          Conectando Talentos às{" "}
-          <span className="text-gradient">Oportunidades Certas</span>
+         Sua empresa está com dificuldade para encontrar profissionais?
         </h1>
 
         {/* Subtítulo */}
         <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-300">
-          Soluções em recrutamento e seleção para empresas que buscam profissionais
-          qualificados e candidatos que desejam encontrar novas oportunidades.
+         A Ana Paula RH ajuda sua empresa a encontrar profissionais alinhados ao perfil da vaga, com um processo de recrutamento organizado, estratégico e humanizado.
         </p>
 
         {/* CTA Principal */}
@@ -53,7 +51,7 @@ export default function Hero() {
             href="#contato"
             className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold text-lg px-10 py-5 rounded-full transition-all duration-300 hover:scale-105 shadow-xl shadow-indigo-500/30 hover:shadow-[0_0_40px_rgba(99,102,241,0.4)]"
           >
-            QUERO ENCONTRAR MEUS PRÓXIMOS FUNCIONÁRIOS
+           Falar com a Ana Paula
             <svg
               className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
