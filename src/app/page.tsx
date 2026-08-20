@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Dor from "@/components/Dor";
 import Solucao from "@/components/Solucao";
 import Beneficios from "@/components/Beneficios";
-import ProvaSocial from "@/components/ProvaSocial";
 import ComoFunciona from "@/components/ComoFunciona";
 import Oferta from "@/components/Oferta";
 import CtaFinal from "@/components/CtaFinal";
@@ -23,9 +22,6 @@ export default function Home() {
       <div id="servicos">
         <Beneficios />
         <Oferta />
-      </div>
-      <div id="depoimentos">
-        <ProvaSocial />
       </div>
       <div id="como-funciona">
         <ComoFunciona />

@@ -11,7 +11,6 @@ export default function Navbar() {
     { label: "Sobre", href: "#sobre" },
     { label: "Como Funciona", href: "#como-funciona" },
     { label: "Serviços", href: "#servicos" },
-    { label: "Depoimentos", href: "#depoimentos" },
   ];
 
   return (
