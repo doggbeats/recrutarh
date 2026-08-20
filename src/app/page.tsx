@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Dor from "@/components/Dor";
 import Solucao from "@/components/Solucao";
@@ -11,12 +12,24 @@ import Rodape from "@/components/Rodape";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Navbar />
+      <div id="inicio">
+        <Hero />
+      </div>
       <Dor />
-      <Solucao />
-      <Beneficios />s
-      <ComoFunciona />
-      <Oferta />
+      <div id="sobre">
+        <Solucao />
+      </div>
+      <div id="servicos">
+        <Beneficios />
+        <Oferta />
+      </div>
+      <div id="depoimentos">
+        <ProvaSocial />
+      </div>
+      <div id="como-funciona">
+        <ComoFunciona />
+      </div>
       <CtaFinal />
       <Rodape />
     </main>
