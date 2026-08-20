@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Solucao() {
   return (
     <section className="relative bg-white py-20 px-4 overflow-hidden">
@@ -5,26 +7,57 @@ export default function Solucao() {
       <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-50 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-      <div className="relative max-w-5xl mx-auto text-center">
+      <div className="relative max-w-5xl mx-auto">
         {/* Badge */}
-       
+        <div className="text-center mb-4">
+          <span className="badge bg-indigo-50 text-indigo-600 border border-indigo-100 mx-auto">
+            Quem está por trás
+          </span>
+        </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">
           Conheça a{" "}
           <span className="text-gradient">Ana Paula RH</span>
         </h2>
 
-        <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-14 leading-relaxed">
-          Sou Ana Paula, profissional de Recursos Humanos e fundadora da{" "}
-          <strong className="text-gray-800">Ana Paula RH</strong>, especializada em
-          recrutamento e seleção, triagem de currículos e divulgação de oportunidades.
-          Meu trabalho nasceu do propósito de{" "}
-          <strong className="text-gray-800">
-            aproximar empresas de profissionais
-          </strong>{" "}
-          que realmente tenham potencial para fazer parte de suas equipes, tornando o
-          processo de contratação mais organizado, estratégico e humanizado.
-        </p>
+        {/* Foto + Texto lado a lado */}
+        <div className="flex flex-col md:flex-row items-center gap-10 mb-14">
+          {/* Foto */}
+          <div className="shrink-0">
+            <div className="relative">
+              <div className="absolute -inset-3 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full blur-lg opacity-20" />
+              <Image
+                src="/anna.jpeg"
+                alt="Ana Paula - Recrutadora"
+                width={280}
+                height={280}
+                className="relative rounded-full object-cover border-4 border-white shadow-elegant-lg"
+              />
+            </div>
+          </div>
+
+          {/* Texto */}
+          <div className="text-center md:text-left">
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              Sou Ana Paula, profissional de Recursos Humanos e fundadora da{" "}
+              <strong className="text-gray-800">Ana Paula RH</strong>, especializada em
+              recrutamento e seleção, triagem de currículos e divulgação de oportunidades.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              Meu trabalho nasceu do propósito de{" "}
+              <strong className="text-gray-800">
+                aproximar empresas de profissionais
+              </strong>{" "}
+              que realmente tenham potencial para fazer parte de suas equipes, tornando o
+              processo de contratação mais organizado, estratégico e humanizado.
+            </p>
+            <p className="text-gray-500 italic">
+              &ldquo;Meu objetivo é conectar as necessidades das empresas aos talentos
+              certos, com profissionalismo, organização e proximidade em cada etapa do
+              processo.&rdquo;
+            </p>
+          </div>
+        </div>
 
         {/* Cards Empresa / Candidato */}
         <div className="grid md:grid-cols-2 gap-6 text-left mb-14">
@@ -61,7 +94,7 @@ export default function Solucao() {
         </div>
 
         {/* Serviços */}
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">O Que Fazemos</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">O Que Fazemos</h3>
         <div className="decorative-line mx-auto mb-10" />
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -71,7 +104,7 @@ export default function Solucao() {
             { icon: "📢", titulo: "Divulgação de Vagas" },
             { icon: "💼", titulo: "Banco de Talentos" },
             { icon: "🎯", titulo: "Atração de Candidatos" },
-          ].map((servico, i) => (
+          ].map((servico) => (
             <div
               key={servico.titulo}
               className="group bg-white border border-gray-100 rounded-2xl p-6 text-center hover-lift shadow-elegant hover:shadow-elegant-lg transition-all duration-300"
