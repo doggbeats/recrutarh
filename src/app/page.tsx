@@ -14,8 +14,7 @@ export default function Home() {
       <Hero />
       <Dor />
       <Solucao />
-      <Beneficios />
-      <ProvaSocial />
+      <Beneficios />s
       <ComoFunciona />
       <Oferta />
       <CtaFinal />
